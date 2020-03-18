@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containers {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+p {
+    transition: .8s ease
+}
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+}
