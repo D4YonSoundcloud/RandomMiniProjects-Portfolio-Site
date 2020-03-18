@@ -85,14 +85,14 @@ body {
   transform: rotateX(-20deg) rotateY(30deg);
   transition: 1s ease;
 }
-h1 {
+h1.main {
   position: relative;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
   transform: rotateY(0) translateY(-10px) translateZ(100px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
-  transition: 1s ease;
+  transition: 0.4s ease;
   text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
@@ -105,10 +105,46 @@ h1.projects {
   transform: rotateY(-90deg) translateZ(100px) translateY(-50px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
-  transition: 1s ease;
+  transition: 0.4s ease;
   text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.big-projects {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform:  rotateY(0) translateY(-60px) translateX(20px)translateZ(-100px) scaleX(-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-projects {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0) translateY(-100px) translateZ(-100px) scaleX(-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.projects.hide {
+  opacity: 0;
+}
+h1.big-projects.hide {
+  opacity: 0;
+}
+h1.small-projects.hide {
+  opacity: 0;
+}
+h1.main.hide {
+  opacity: 0;
 }
 p.webdev {
   position: relative;
@@ -117,11 +153,16 @@ p.webdev {
   transform: rotateY(0) translateY(-15px) translateZ(100px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(226, 226, 226);
-  transition: 1s ease;
+  transition: 0.4s ease;
   text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
 }
+
+p.webdev.hide {
+  opacity: 0;
+}
+
 
 .side {
   position: absolute;
@@ -190,6 +231,11 @@ button#btn-7:hover{
     padding-left: 10px
 
 }
+button#btn-21:hover{
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+
+}
 button#btn-2:hover{
     transform: scaleX(1.0) scale(1.05);
     padding-left: 10px
@@ -212,10 +258,134 @@ button#btn-5:hover{
 }
 button#btn-6{
     font-size: 25px;
+}
+button#btn-6:hover{
+    font-size: 25px;
     transform: scaleX(1.0) scale(1.05);
+    padding-left: 20px
+
+}
+
+
+button#btn-13{
+    font-size: 20px;
+
+}
+button#btn-13:hover{
+    font-size: 20px;
+    transform: scale(1.1);
+    padding-left: 15px;
+}
+button#btn-14{
+    font-size: 25px;
+
+}
+button#btn-14:hover{
+    transform: scale(1.1);
+    padding-left: 25px;
+}
+button#btn-15{
+    font-size: 20px;
+
+}
+button#btn-15:hover{
+    transform: scale(1.1);
+    padding-left: 25px;
+}
+button#btn-16{
+    transform: translateY(40px);
+}
+button#btn-16:hover{
+    transform: translateY(40px) scaleX(1.0) scale(1.05);
     padding-left: 10px
 
 }
+button#btn-9{
+    font-size: 13px;
+    text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+    0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
+    0 -1px 3px rgba(230, 230, 230, 0.233);
+}
+button#btn-9:hover{
+    font-size: 13px;
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+}
+
+button#btn-10:hover{
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+}
+
+button#btn-9{
+    font-size: 13px;
+    text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+    0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
+    0 -1px 3px rgba(230, 230, 230, 0.233);
+}
+button#btn-11{
+    font-size: 20px;
+    transform: translateY(10px)scaleX(1.0) scale(1.05);
+    padding-left: 40px;
+}
+button#btn-11:hover{
+    font-size: 20px;
+    transform: translateY(10px)scaleX(1.0) scale(1.1);
+    padding-left: 60px;
+}
+
+button#btn-12{
+    transform: translateY(45px);
+}
+
+button#btn-12:hover{
+    transform: translateY(45px) scaleX(1.0) scale(1.05);
+    padding-left: 10px;
+}
+button#btn-22{
+    font-size: 14px;
+    transform: translateY(10px);
+}
+button#btn-22:hover{
+    font-size: 14px;
+    transform: translateY(10px) scaleX(1.0) scale(1.05);
+    padding-left: 13px;
+}
+button#btn-23{
+    font-size: 12px;
+    transform: translateY(20px);
+}
+button#btn-23:hover{
+    font-size: 12px;
+    transform: translateY(20px) scaleX(1.0) scale(1.05);
+    padding-left: 10px;
+}
+
+button#btn-24{
+    font-size: 12px;
+    transform: translateY(30px);
+}
+button#btn-24:hover{
+    font-size: 12px;
+    transform: translateY(30px) scaleX(1.0) scale(1.05);
+    padding-left: 10px;
+}
+
+button#btn-25{
+    transform: translateY(30px);
+}
+button#btn-25:hover{
+    transform: translateY(30px) scaleX(1.0) scale(1.05);
+    padding-left: 10px;
+}
+button#btn-20{
+    transform: translateY(10px);
+}
+button#btn-20:hover{
+    transform: translateY(10px) scaleX(1.0) scale(1.05);
+    padding-left: 10px;
+}
+
 
 button.site-repo {
   background: none;
@@ -438,4 +608,21 @@ button:nth-child(4):hover ~ .shape {
   100% {
     transform: translateY(0) rotateX(0);
   }
+}
+div.left-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.left-text.hide {
+  opacity: 0;
+}
+
+div.top-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.top-text.hide {
+  opacity: 0;
 }

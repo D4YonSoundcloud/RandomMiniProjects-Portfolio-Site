@@ -18,20 +18,30 @@ const button17 = document.getElementById("btn-17");
 const button18 = document.getElementById("btn-18");
 const button19 = document.getElementById("btn-19");
 const button20 = document.getElementById("btn-20");
+const button21 = document.getElementById("btn-21");
+const button22 = document.getElementById("btn-22");
+const button23 = document.getElementById("btn-23");
+const button24 = document.getElementById("btn-24");
+const button25 = document.getElementById("btn-25");
+const button26 = document.getElementById("btn-26");
 const box = document.getElementById("box");
+const leftText = document.getElementById("left-text");
+const topText = document.getElementById("top-text");
 const shape1 = document.getElementById("shape-1");
+const h1Main = document.getElementById("main");
+const h1Webdev = document.getElementById("webdev");
+const h1Projects = document.getElementById("projects");
+const h1BigProjects = document.getElementById("big-projects");
+const h1SmallProjects = document.getElementById("small-projects");
 
 button1.addEventListener("click", e => {
   box.classList.remove("goToFrontFromBottom");
   box.classList.toggle("goToLeft");
   shape1.classList.add("hide");
-  console.log("added");
-});
-
-button2.addEventListener("click", e => {
-  box.classList.remove("goToFrontFromBottom");
-  box.classList.toggle("goToRight");
-  shape1.classList.add("hide");
+  h1Main.classList.add("hide");
+  h1Webdev.classList.add("hide");
+  h1Projects.classList.remove("hide");
+  leftText.classList.remove("hide");
   console.log("added");
 });
 
@@ -44,6 +54,9 @@ button4.addEventListener("click", e => {
 button3.addEventListener("click", e => {
   box.classList.remove("goToFrontFromBottom");
   box.classList.toggle("goToTop");
+  h1Main.classList.add("hide");
+  h1Webdev.classList.add("hide");
+  topText.classList.remove("hide");
   console.log("added");
 });
 
@@ -53,27 +66,49 @@ button5.addEventListener("click", e => {
   console.log("added");
 });
 
-
 button6.addEventListener("click", e => {
-    box.classList.remove("goToLeft");
-    box.classList.toggle("goToBack");
-    console.log("added");
-  });
+  box.classList.remove("goToLeft");
+  box.classList.toggle("goToBack");
+  console.log("added");
+});
 
 button8.addEventListener("click", e => {
-    box.classList.remove("goToLeft");
-    console.log("added");
-  });
+  h1Main.classList.remove("hide");
+  h1Webdev.classList.remove("hide");
+  h1Projects.classList.add("hide");
+  leftText.classList.add("hide");
+  box.classList.remove("goToLeft");
+  console.log("added");
+});
+
+button12.addEventListener("click", e => {
+  box.classList.remove("goToRight");
+  console.log("added");
+});
 
 button13.addEventListener("click", e => {
   box.classList.remove("goToBack");
-  box.classList.toggle("goToBottomFromBack");
+  box.classList.toggle("goToRight");
+  console.log("added");
+});
+
+button16.addEventListener("click", e => {
+  box.classList.remove("goToBack");
+  box.classList.remove("goToLeft");
   console.log("added");
 });
 
 button20.addEventListener("click", e => {
-    box.classList.remove("goToBottomFromBack");
+  box.classList.remove("goToBottomFromBack");
   box.classList.remove("goToBottom");
   box.classList.toggle("goToFrontFromBottom");
+  console.log("added");
+});
+
+button25.addEventListener("click", e => {
+  box.classList.remove("goToTop");
+  h1Main.classList.remove("hide");
+  h1Webdev.classList.remove("hide");
+  topText.classList.add("hide");
   console.log("added");
 });
