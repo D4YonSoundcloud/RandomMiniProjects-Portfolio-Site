@@ -24,82 +24,145 @@ body {
 }
 
 .box.goToLeft {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(-20deg) rotateY(120deg);
-    transition: 1s ease;
-  }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(120deg);
+  transition: 1s ease;
+}
 
-  .box.goToRight {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(-20deg) rotateY(-60deg);
-    transition: 1s ease;
-  }
+.box.goToRight {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-60deg);
+  transition: 1s ease;
+}
 
-  .box.goToBack {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(-20deg) rotateY(210deg);
-    transition: 1s ease;
-  }
+.box.goToBack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(210deg);
+  transition: 1s ease;
+}
 
-  .box.goToBottom {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
-    transition: 1s ease;
-  }
+.box.goToTop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-100deg) rotateY(30deg) rotateZ(0deg);
+  transition: 1s ease;
+}
 
-  .box.goToBottomFromBack {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
-    transition: 1s ease;
-  }
+.box.goToBottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
+  transition: 1s ease;
+}
+
+.box.goToBottomFromBack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
+  transition: 1s ease;
+}
+
+.box.goToFrontFromBottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  transition: 1s ease;
+}
+h1 {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0) translateY(-10px) translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 1s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+
+h1.projects {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg) translateZ(100px) translateY(-50px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 1s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+p.webdev {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0) translateY(-15px) translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(226, 226, 226);
+  transition: 1s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
 
 .side {
   position: absolute;
   width: 200px;
   height: 200px;
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
   background-color: rgb(73, 14, 70);
 }
 
 .side-front {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
   transform: rotateY(0) translateZ(100px);
   background-color: rgb(128, 91, 134);
 }
 
 .side-left {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
   transform: rotateY(-90deg) translateZ(100px);
   background-color: rgb(128, 91, 134);
 }
 .side-top {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
   transform: rotateX(90deg) translateZ(100px);
   background-color: rgb(116, 84, 121);
 }
 .side-back {
-    transform: rotateY(0) translateZ(-100px);
-    background-color: rgb(116, 84, 121);
-  }
-  .side-right {
-    transform: rotateY(90deg) translateZ(100px);
-    background-color:  rgb(128, 91, 134);
-  }
-  .side-bottom {
-    transform: rotateY(90deg) translateZ(0px) translatey(100px)rotateX(90deg);
-    background-color: rgb(116, 84, 121);
-  }
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(0) translateZ(-100px) scalex(-1);
+  background-color: rgb(116, 84, 121);
+}
+.side-right {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: rgb(128, 91, 134);
+}
+.side-bottom {
+  box-shadow: 0px 0px 60px 10px rgb(220, 162, 228);
+  transform: rotateY(90deg) translateZ(0px) translatey(100px) rotateX(90deg)
+    scaleX(-1);
+  background-color: rgb(116, 84, 121);
+}
 
 button {
   background: none;
@@ -111,8 +174,61 @@ button {
   outline: inherit;
   width: 100%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(79, 7, 87);
+  color: rgb(236, 234, 236);
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
   font-size: 30px;
+  transition: 0.3s ease;
+  transform-origin: left;
+  text-align: left;
+  padding-left: 10px;
+}
+
+button#btn-7:hover{
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+
+}
+button#btn-2:hover{
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+
+}
+
+button#btn-8{
+    transform: translateY(50px);
+}
+button#btn-8:hover{
+    transform: translateY(50px) scaleX(1.0) scale(1.05);
+    padding-left: 10px
+
+}
+
+button#btn-5:hover{
+    transform: scaleX(1.0) scale(1.1);
+    padding-left: 15px
+
+}
+button#btn-6{
+    font-size: 25px;
+    transform: scaleX(1.0) scale(1.05);
+    padding-left: 10px
+
+}
+
+button.site-repo {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(240, 239, 240);
+  font-size: 20px;
   transition: 0.3s ease;
   transform-origin: left;
   text-align: left;
@@ -123,7 +239,6 @@ button:hover {
   transform: scaleX(1.1) scale(1.1);
   padding-left: 25px;
 }
-
 .shape {
   width: 700px;
   height: 500px;
@@ -133,6 +248,7 @@ button:hover {
   background-color: rgb(69, 8, 88);
   z-index: -10;
   transition: 1s;
+  opacity: 0;
   animation: float 8s infinite;
   clip-path: polygon(
     397px 188px,
@@ -204,9 +320,9 @@ button:nth-child(1):hover ~ .shape {
 }
 
 .shape.hide {
-    transition: 0.8s;
-    opacity: 1;
-  }
+  transition: 0.8s;
+  opacity: 0;
+}
 button:nth-child(2):hover ~ .shape {
   clip-path: polygon(
     397px 188px,
@@ -323,4 +439,3 @@ button:nth-child(4):hover ~ .shape {
     transform: translateY(0) rotateX(0);
   }
 }
-
