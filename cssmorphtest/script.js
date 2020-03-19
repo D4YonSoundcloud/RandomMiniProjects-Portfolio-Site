@@ -24,15 +24,35 @@ const button23 = document.getElementById("btn-23");
 const button24 = document.getElementById("btn-24");
 const button25 = document.getElementById("btn-25");
 const button26 = document.getElementById("btn-26");
+const button27 = document.getElementById("btn-27");
+const button28 = document.getElementById("btn-28");
+const button29 = document.getElementById("btn-29");
+const button30 = document.getElementById("btn-30");
+const button31 = document.getElementById("btn-31");
+const button32 = document.getElementById("btn-32");
 const box = document.getElementById("box");
 const leftText = document.getElementById("left-text");
 const topText = document.getElementById("top-text");
+const frontText = document.getElementById("front-text");
+const bottomText = document.getElementById("bottom-text");
+const backBigText = document.getElementById("back-text");
+const backSmallText = document.getElementById("back-text-small");
+const bigProjectText1 = document.getElementById("big-project-1");
+const bigProjectText2 = document.getElementById("big-project-2");
+const bigProjectText3 = document.getElementById("big-project-3");
+const smallProjectText1 = document.getElementById("small-project-1");
+const smallProjectText2 = document.getElementById("small-project-2");
+const smallProjectText3 = document.getElementById("small-project-3");
+const smallProjectText4 = document.getElementById("small-project-4");
 const shape1 = document.getElementById("shape-1");
 const h1Main = document.getElementById("main");
 const h1Webdev = document.getElementById("webdev");
 const h1Projects = document.getElementById("projects");
 const h1BigProjects = document.getElementById("big-projects");
 const h1SmallProjects = document.getElementById("small-projects");
+const h1AboutMe = document.getElementById("about-me");
+const h1MyGithub = document.getElementById("my-github");
+const h1BigProject1 = document.getElementById("big-project-1-title");
 
 button1.addEventListener("click", e => {
   box.classList.remove("goToFrontFromBottom");
@@ -40,6 +60,7 @@ button1.addEventListener("click", e => {
   shape1.classList.add("hide");
   h1Main.classList.add("hide");
   h1Webdev.classList.add("hide");
+  frontText.classList.add("hide");
   h1Projects.classList.remove("hide");
   leftText.classList.remove("hide");
   console.log("added");
@@ -48,6 +69,11 @@ button1.addEventListener("click", e => {
 button4.addEventListener("click", e => {
   box.classList.remove("goToFrontFromBottom");
   box.classList.toggle("goToBottom");
+  h1Webdev.classList.add("hide");
+  h1Main.classList.add("hide");
+  frontText.classList.add("hide");
+  h1MyGithub.classList.remove("hide");
+  bottomText.classList.remove("hide");
   console.log("added");
 });
 
@@ -56,6 +82,7 @@ button3.addEventListener("click", e => {
   box.classList.toggle("goToTop");
   h1Main.classList.add("hide");
   h1Webdev.classList.add("hide");
+  h1AboutMe.classList.remove("hide");
   topText.classList.remove("hide");
   console.log("added");
 });
@@ -63,12 +90,20 @@ button3.addEventListener("click", e => {
 button5.addEventListener("click", e => {
   box.classList.remove("goToLeft");
   box.classList.toggle("goToBack");
+  h1Projects.classList.add("hide");
+  backBigText.classList.remove("hide");
+  h1BigProjects.classList.remove("hide");
+  leftText.classList.add("hide");
   console.log("added");
 });
 
 button6.addEventListener("click", e => {
   box.classList.remove("goToLeft");
   box.classList.toggle("goToBack");
+  h1Projects.classList.add("hide");
+  h1SmallProjects.classList.remove("hide");
+  backSmallText.classList.remove("hide");
+  leftText.classList.add("hide");
   console.log("added");
 });
 
@@ -77,24 +112,41 @@ button8.addEventListener("click", e => {
   h1Webdev.classList.remove("hide");
   h1Projects.classList.add("hide");
   leftText.classList.add("hide");
+  frontText.classList.remove("hide");
   box.classList.remove("goToLeft");
   console.log("added");
 });
 
 button12.addEventListener("click", e => {
   box.classList.remove("goToRight");
+  h1Main.classList.remove("hide");
+  h1Webdev.classList.remove("hide");
+  frontText.classList.remove("hide");
+  bigProjectText1.classList.add("hide");
+  h1BigProject1.classList.add("hide");
+  rightText.classList.add("hide");
   console.log("added");
 });
 
 button13.addEventListener("click", e => {
   box.classList.remove("goToBack");
   box.classList.toggle("goToRight");
+  h1BigProjects.classList.add("hide");
+  frontText.classList.add("hide");
+  h1BigProject1.classList.remove("hide");
+  bigProjectText1.classList.remove("hide");
+  backBigText.classList.add("hide");
   console.log("added");
 });
 
 button16.addEventListener("click", e => {
   box.classList.remove("goToBack");
   box.classList.remove("goToLeft");
+  h1Main.classList.remove("hide");
+  h1Webdev.classList.remove("hide");
+  h1BigProjects.classList.add("hide");
+  backBigText.classList.add("hide");
+  frontText.classList.remove("hide");
   console.log("added");
 });
 
@@ -102,6 +154,11 @@ button20.addEventListener("click", e => {
   box.classList.remove("goToBottomFromBack");
   box.classList.remove("goToBottom");
   box.classList.toggle("goToFrontFromBottom");
+  h1Webdev.classList.remove("hide");
+  h1Main.classList.remove("hide");
+  bottomText.classList.add("hide");
+  h1MyGithub.classList.add("hide");
+  frontText.classList.remove("hide");
   console.log("added");
 });
 
@@ -109,6 +166,19 @@ button25.addEventListener("click", e => {
   box.classList.remove("goToTop");
   h1Main.classList.remove("hide");
   h1Webdev.classList.remove("hide");
+  frontText.classList.remove("hide");
   topText.classList.add("hide");
+  h1AboutMe.classList.add("hide");
+  console.log("added");
+});
+
+button32.addEventListener("click", e => {
+  box.classList.remove("goToBack");
+  box.classList.remove("goToLeft");
+  frontText.classList.remove("hide");
+  h1Main.classList.remove("hide");
+  h1Webdev.classList.remove("hide");
+  h1SmallProjects.classList.add("hide");
+  backSmallText.classList.add("hide");
   console.log("added");
 });

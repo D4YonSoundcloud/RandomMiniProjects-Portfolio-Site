@@ -20,7 +20,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transform: rotateX(-20deg) rotateY(30deg);
-  transition: 1s ease;
+  transition: 1.4s ease;
 }
 
 .box.goToLeft {
@@ -28,7 +28,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(120deg);
+  transform: rotateX(0deg) rotateY(120deg);
   transition: 1s ease;
 }
 
@@ -37,7 +37,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(-60deg);
+  transform: rotateX(20deg) rotateY(-75deg) rotateZ(0deg);
   transition: 1s ease;
 }
 
@@ -46,7 +46,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(210deg);
+  transform: rotateX(20deg) rotateY(210deg);
   transition: 1s ease;
 }
 
@@ -89,7 +89,7 @@ h1.main {
   position: relative;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(0) translateY(-10px) translateZ(100px);
+  transform: rotateY(0) translateY(30px) translateZ(100px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -102,7 +102,7 @@ h1.projects {
   position: relative;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(-90deg) translateZ(100px) translateY(-50px);
+  transform: rotateY(-90deg) translateZ(100px) translateX(30px) translateY(0px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -114,7 +114,7 @@ h1.big-projects {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform:  rotateY(0) translateY(-60px) translateX(20px)translateZ(-100px) scaleX(-1);
+  transform: rotateY(-90deg) translateY(20px) translateZ(-120px) translateX(-15px) scaleX(-1) scale(1.1);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -126,13 +126,55 @@ h1.small-projects {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(0) translateY(-100px) translateZ(-100px) scaleX(-1);
+  transform: rotateY(-90deg) translateY(20px) translateZ(-110px) translateX(-70px) scaleX(-1) scale(1.1);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
   text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.about-me {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-120px) translateX(25px)
+    translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.my-github {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-130px)
+    translateX(50px) translateZ(-250px) scaleY(-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+
+h1.big-project-1-title{
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(110px) translateX(30px) translateY(-80px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.big-project-1-title.hide{
+  opacity: 0;
 }
 h1.projects.hide {
   opacity: 0;
@@ -143,6 +185,13 @@ h1.big-projects.hide {
 h1.small-projects.hide {
   opacity: 0;
 }
+h1.about-me.hide {
+  opacity: 0;
+}
+
+h1.my-github.hide {
+  opacity: 0;
+}
 h1.main.hide {
   opacity: 0;
 }
@@ -150,7 +199,7 @@ p.webdev {
   position: relative;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(0) translateY(-15px) translateZ(100px);
+  transform: rotateY(0) translateY(25px) translateZ(100px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(226, 226, 226);
   transition: 0.4s ease;
@@ -162,7 +211,6 @@ p.webdev {
 p.webdev.hide {
   opacity: 0;
 }
-
 
 .side {
   position: absolute;
@@ -226,166 +274,198 @@ button {
   padding-left: 10px;
 }
 
-button#btn-7:hover{
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 10px
-
+button#btn-7:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
-button#btn-21:hover{
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 10px
-
+button#btn-21:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
-button#btn-2:hover{
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 10px
-
+button#btn-2:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
 
-button#btn-8{
-    transform: translateY(50px);
+button#btn-8 {
+  transform: translateY(50px);
 }
-button#btn-8:hover{
-    transform: translateY(50px) scaleX(1.0) scale(1.05);
-    padding-left: 10px
-
-}
-
-button#btn-5:hover{
-    transform: scaleX(1.0) scale(1.1);
-    padding-left: 15px
-
-}
-button#btn-6{
-    font-size: 25px;
-}
-button#btn-6:hover{
-    font-size: 25px;
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 20px
-
+button#btn-8:hover {
+  transform: translateY(50px) scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
 
+button#btn-5:hover {
+  transform: scaleX(1) scale(1.1);
+  padding-left: 15px;
+}
+button#btn-6 {
+  font-size: 25px;
+}
+button#btn-6:hover {
+  font-size: 25px;
+  transform: scaleX(1) scale(1.05);
+  padding-left: 20px;
+}
 
-button#btn-13{
-    font-size: 20px;
-
+button#btn-13 {
+  font-size: 20px;
 }
-button#btn-13:hover{
-    font-size: 20px;
-    transform: scale(1.1);
-    padding-left: 15px;
+button#btn-13:hover {
+  font-size: 20px;
+  transform: scale(1.1);
+  padding-left: 15px;
 }
-button#btn-14{
-    font-size: 25px;
-
+button#btn-14 {
+  font-size: 25px;
 }
-button#btn-14:hover{
-    transform: scale(1.1);
-    padding-left: 25px;
+button#btn-14:hover {
+  transform: scale(1.1);
+  padding-left: 25px;
 }
-button#btn-15{
-    font-size: 20px;
-
+button#btn-15 {
+  font-size: 20px;
 }
-button#btn-15:hover{
-    transform: scale(1.1);
-    padding-left: 25px;
+button#btn-15:hover {
+  transform: scale(1.1);
+  padding-left: 25px;
 }
-button#btn-16{
-    transform: translateY(40px);
+button#btn-16 {
+  transform: translateY(40px);
 }
-button#btn-16:hover{
-    transform: translateY(40px) scaleX(1.0) scale(1.05);
-    padding-left: 10px
-
+button#btn-16:hover {
+  transform: translateY(40px) scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
-button#btn-9{
-    font-size: 13px;
-    text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+button#btn-9 {
+  font-size: 13px;
+  text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
     0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
     0 -1px 3px rgba(230, 230, 230, 0.233);
 }
-button#btn-9:hover{
-    font-size: 13px;
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 10px
+button#btn-9:hover {
+  font-size: 13px;
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
 
-button#btn-10:hover{
-    transform: scaleX(1.0) scale(1.05);
-    padding-left: 10px
+button#btn-10:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
 
-button#btn-9{
-    font-size: 13px;
-    text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+button#btn-9 {
+  font-size: 13px;
+  text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
     0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
     0 -1px 3px rgba(230, 230, 230, 0.233);
 }
-button#btn-11{
-    font-size: 20px;
-    transform: translateY(10px)scaleX(1.0) scale(1.05);
-    padding-left: 40px;
+button#btn-11 {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 40px;
 }
-button#btn-11:hover{
-    font-size: 20px;
-    transform: translateY(10px)scaleX(1.0) scale(1.1);
-    padding-left: 60px;
-}
-
-button#btn-12{
-    transform: translateY(45px);
+button#btn-11:hover {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.1);
+  padding-left: 60px;
 }
 
-button#btn-12:hover{
-    transform: translateY(45px) scaleX(1.0) scale(1.05);
-    padding-left: 10px;
-}
-button#btn-22{
-    font-size: 14px;
-    transform: translateY(10px);
-}
-button#btn-22:hover{
-    font-size: 14px;
-    transform: translateY(10px) scaleX(1.0) scale(1.05);
-    padding-left: 13px;
-}
-button#btn-23{
-    font-size: 12px;
-    transform: translateY(20px);
-}
-button#btn-23:hover{
-    font-size: 12px;
-    transform: translateY(20px) scaleX(1.0) scale(1.05);
-    padding-left: 10px;
+button#btn-12 {
+  transform: translateY(45px);
 }
 
-button#btn-24{
-    font-size: 12px;
-    transform: translateY(30px);
+button#btn-12:hover {
+  transform: translateY(45px) scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
-button#btn-24:hover{
-    font-size: 12px;
-    transform: translateY(30px) scaleX(1.0) scale(1.05);
-    padding-left: 10px;
+button#btn-22 {
+  font-size: 14px;
+  transform: translateY(10px);
 }
-
-button#btn-25{
-    transform: translateY(30px);
+button#btn-22:hover {
+  font-size: 14px;
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 13px;
 }
-button#btn-25:hover{
-    transform: translateY(30px) scaleX(1.0) scale(1.05);
-    padding-left: 10px;
+button#btn-23 {
+  font-size: 12px;
+  transform: translateY(20px);
 }
-button#btn-20{
-    transform: translateY(10px);
-}
-button#btn-20:hover{
-    transform: translateY(10px) scaleX(1.0) scale(1.05);
-    padding-left: 10px;
+button#btn-23:hover {
+  font-size: 12px;
+  transform: translateY(20px) scaleX(1) scale(1.05);
+  padding-left: 10px;
 }
 
+button#btn-24 {
+  font-size: 12px;
+  transform: translateY(30px);
+}
+button#btn-24:hover {
+  font-size: 12px;
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-28 {
+  font-size: 14px;
+  transform: translateY(0px);
+}
+button#btn-28:hover {
+  font-size: 14px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-29 {
+  font-size: 20px;
+  transform: translateY(0px);
+}
+button#btn-29:hover {
+  font-size: 20px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-30 {
+  font-size: 25px;
+  transform: translateY(0px);
+}
+button#btn-30:hover {
+  font-size: 25px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-31 {
+  font-size: 30px;
+  transform: translateY(0px);
+}
+button#btn-31:hover {
+  font-size: 30px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-32 {
+  transform: translateY(10px);
+}
+button#btn-32:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-25 {
+  transform: translateY(30px);
+}
+button#btn-25:hover {
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-20 {
+  transform: translateY(10px);
+}
+button#btn-20:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
 
 button.site-repo {
   background: none;
@@ -625,4 +705,52 @@ div.top-text {
 
 div.top-text.hide {
   opacity: 0;
+}
+div.bottom-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.bottom-text.hide {
+  opacity: 0;
+}
+div.back-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.back-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.back-text-small {
+  position: absolute;
+  transform: translateY(-150px);
+  transition: 0.8s ease;
+  font-size: 15px;
+  opacity: 1;
+}
+
+div.back-text-small.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.front-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.front-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.big-project-1-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.big-project-1-text.hide {
+  opacity: 0;
+  pointer-events: none;
 }
