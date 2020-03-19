@@ -1,0 +1,1030 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+.container {
+  width: 200px;
+  height: 200px;
+  perspective: 700px;
+  margin: 250px auto;
+  transform: translateY(-110px);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  transition: 1.4s ease;
+}
+
+.box.goToLeft {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(120deg);
+  transition: 1s ease;
+}
+
+.box.goToRight {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(-75deg) rotateZ(0deg);
+  transition: 1s ease;
+}
+
+.box.goToBack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(210deg);
+  transition: 1s ease;
+}
+
+.box.goToTop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-100deg) rotateY(20deg) rotateZ(0deg) translateY(-110px);
+  transition: 1s ease;
+}
+
+.box.goToBottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
+  transition: 1s ease;
+}
+
+.box.goToBottomFromBack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(100deg) rotateY(30deg) rotateZ(0deg);
+  transition: 1s ease;
+}
+
+.box.goToFrontFromBottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  transition: 1s ease;
+}
+h1.main {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0) translateY(30px) translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+
+h1.projects {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg) translateZ(100px) translateX(30px) translateY(0px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.big-projects {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg) translateY(20px) translateZ(-120px)
+    translateX(-15px) scaleX(-1) scale(1.1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-projects {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg) translateY(20px) translateZ(-110px)
+    translateX(-70px) scaleX(-1) scale(1.1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.about-me {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-120px)
+    translateX(25px) translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.my-github {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-130px)
+    translateX(50px) translateZ(-250px) scaleY(-1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+
+h1.big-project-1-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(110px) translateX(10px) translateY(-80px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.big-project-1-title.hide {
+  opacity: 0;
+}
+h1.big-project-2-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(110px) translateX(0px) translateY(-50px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.big-project-3-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(140px) translateX(-25px)
+    translateY(-50px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-1-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(0px) translateY(-80px)
+    scale(0.9);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-4-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-40px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-3-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-80px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-2-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-80px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-1-title.hide {
+  opacity: 0;
+}
+h1.small-project-2-title.hide {
+  opacity: 0;
+}
+h1.small-project-4-title.hide {
+  opacity: 0;
+}
+h1.small-project-3-title.hide {
+  opacity: 0;
+}
+h1.big-project-3-title.hide {
+  opacity: 0;
+}
+h1.big-project-2-title.hide {
+  opacity: 0;
+}
+h1.projects.hide {
+  opacity: 0;
+}
+h1.big-projects.hide {
+  opacity: 0;
+}
+h1.small-projects.hide {
+  opacity: 0;
+}
+h1.about-me.hide {
+  opacity: 0;
+}
+
+h1.my-github.hide {
+  opacity: 0;
+}
+h1.main.hide {
+  opacity: 0;
+}
+p.webdev {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(0) translateY(25px) translateZ(100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(226, 226, 226);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+
+p.webdev.hide {
+  opacity: 0;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  background-color: rgb(73, 14, 70);
+}
+
+.side-front {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(0) translateZ(100px);
+  background-color: rgb(128, 91, 134);
+}
+
+.side-left {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: rgb(128, 91, 134);
+}
+.side-top {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: rgb(116, 84, 121);
+}
+.side-back {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(0) translateZ(-100px) scalex(-1);
+  background-color: rgb(116, 84, 121);
+}
+.side-right {
+  box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: rgb(128, 91, 134);
+}
+.side-bottom {
+  box-shadow: 0px 0px 60px 10px rgb(220, 162, 228);
+  transform: rotateY(90deg) translateZ(0px) translatey(100px) rotateX(90deg)
+    scaleX(-1);
+  background-color: rgb(116, 84, 121);
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(236, 234, 236);
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+  font-size: 30px;
+  transition: 0.3s ease;
+  transform-origin: left;
+  text-align: left;
+  padding-left: 10px;
+}
+
+button#btn-7:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-21:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-2:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-8 {
+  transform: translateY(50px);
+}
+button#btn-8:hover {
+  transform: translateY(50px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-5:hover {
+  transform: scaleX(1) scale(1.1);
+  padding-left: 15px;
+}
+button#btn-6 {
+  font-size: 25px;
+}
+button#btn-6:hover {
+  font-size: 25px;
+  transform: scaleX(1) scale(1.05);
+  padding-left: 20px;
+}
+
+button#btn-13 {
+  font-size: 20px;
+}
+button#btn-13:hover {
+  font-size: 20px;
+  transform: scale(1.1);
+  padding-left: 15px;
+}
+button#btn-14 {
+  font-size: 25px;
+}
+button#btn-14:hover {
+  transform: scale(1.1);
+  padding-left: 25px;
+}
+button#btn-15 {
+  font-size: 20px;
+}
+button#btn-15:hover {
+  transform: scale(1.1);
+  padding-left: 25px;
+}
+button#btn-16 {
+  transform: translateY(40px);
+}
+button#btn-16:hover {
+  transform: translateY(40px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-9 {
+  font-size: 13px;
+  text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+    0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
+    0 -1px 3px rgba(230, 230, 230, 0.233);
+}
+button#btn-9:hover {
+  font-size: 13px;
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-10:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-9 {
+  font-size: 13px;
+  text-shadow: -1px 0 3px rgba(238, 238, 238, 0.219),
+    0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
+    0 -1px 3px rgba(230, 230, 230, 0.233);
+}
+button#btn-11 {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 40px;
+}
+button#btn-11:hover {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.1);
+  padding-left: 60px;
+}
+
+button#btn-12 {
+  transform: translateY(30px);
+}
+
+button#btn-12:hover {
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-22 {
+  font-size: 14px;
+  transform: translateY(10px);
+}
+button#btn-22:hover {
+  font-size: 14px;
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 13px;
+}
+button#btn-23 {
+  font-size: 12px;
+  transform: translateY(20px);
+}
+button#btn-23:hover {
+  font-size: 12px;
+  transform: translateY(20px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-26:hover {
+  color: rgb(238, 161, 238) !important;
+}
+
+button#btn-24 {
+  font-size: 12px;
+  transform: translateY(30px);
+}
+button#btn-24:hover {
+  font-size: 12px;
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-28 {
+  font-size: 14px;
+  transform: translateY(0px);
+}
+button#btn-28:hover {
+  font-size: 14px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-29 {
+  font-size: 20px;
+  transform: translateY(0px);
+}
+button#btn-29:hover {
+  font-size: 20px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-30 {
+  font-size: 25px;
+  transform: translateY(0px);
+}
+button#btn-30:hover {
+  font-size: 25px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-31 {
+  font-size: 30px;
+  transform: translateY(0px);
+}
+button#btn-31:hover {
+  font-size: 30px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-32 {
+  transform: translateY(10px);
+}
+button#btn-32:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
+button#btn-25 {
+  transform: translateY(30px);
+}
+button#btn-25:hover {
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-20 {
+  transform: translateY(10px);
+}
+button#btn-20:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-34 {
+  font-size: 10px;
+  transform: translateY(0px);
+}
+button#btn-34:hover {
+  font-size: 10px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-33 {
+  transform: translateY(15px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-33:hover {
+  transform: translateY(15px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-35 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-35:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-36 {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+}
+button#btn-36:hover {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-37 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-37:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-38 {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+}
+button#btn-38:hover {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-39 {
+  font-size: 11px;
+  transform: translateY(0px);
+}
+button#btn-39:hover {
+  font-size: 11px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-40 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-40:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-41 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-41:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-42 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-42:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-43 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-43:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-44 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-44:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button.site-repo {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(240, 239, 240);
+  font-size: 20px;
+  transition: 0.3s ease;
+  transform-origin: left;
+  text-align: left;
+  padding-left: 10px;
+}
+
+button:hover {
+  transform: scaleX(1.1) scale(1.1);
+  padding-left: 25px;
+}
+.shape {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  left: -650px;
+  top: -120px;
+  background-color: rgb(69, 8, 88);
+  z-index: -10;
+  transition: 1s;
+  opacity: 0;
+  animation: float 8s infinite;
+  clip-path: polygon(
+    397px 188px,
+    391px 185px,
+    401px 172px,
+    424px 172px,
+    459px 168px,
+    491px 162px,
+    498px 153px,
+    502px 136px,
+    519px 131px,
+    535px 140px,
+    555px 148px,
+    572px 145px,
+    595px 143px,
+    609px 150px,
+    634px 168px,
+    602px 167px,
+    560px 164px,
+    519px 173px,
+    563px 170px,
+    602px 174px,
+    634px 175px,
+    602px 182px,
+    567px 180px,
+    546px 177px,
+    523px 186px,
+    508px 178px,
+    490px 177px,
+    466px 185px,
+    408px 200px,
+    398px 192px
+  );
+}
+button:nth-child(1):hover ~ .shape {
+  transform: rotateZ(-20deg);
+  clip-path: polygon(
+    397px 188px,
+    391px 185px,
+    401px 172px,
+    424px 172px,
+    459px 168px,
+    491px 162px,
+    498px 153px,
+    502px 136px,
+    519px 131px,
+    535px 140px,
+    555px 148px,
+    572px 145px,
+    595px 143px,
+    609px 150px,
+    634px 168px,
+    602px 167px,
+    560px 164px,
+    519px 173px,
+    563px 170px,
+    602px 174px,
+    634px 175px,
+    602px 182px,
+    567px 180px,
+    546px 177px,
+    523px 186px,
+    508px 178px,
+    490px 177px,
+    466px 185px,
+    408px 200px,
+    398px 192px
+  );
+}
+
+.shape.hide {
+  transition: 0.8s;
+  opacity: 0;
+}
+button:nth-child(2):hover ~ .shape {
+  clip-path: polygon(
+    397px 188px,
+    391px 185px,
+    401px 172px,
+    424px 172px,
+    459px 168px,
+    491px 162px,
+    498px 153px,
+    502px 136px,
+    519px 131px,
+    535px 140px,
+    555px 148px,
+    572px 145px,
+    595px 143px,
+    609px 150px,
+    634px 168px,
+    602px 167px,
+    560px 164px,
+    519px 173px,
+    564px 183px,
+    599px 191px,
+    631px 196px,
+    606px 202px,
+    573px 199px,
+    545px 195px,
+    523px 186px,
+    508px 178px,
+    490px 177px,
+    466px 185px,
+    408px 200px,
+    398px 192px
+  );
+  transform: rotateZ(-20deg);
+}
+button:nth-child(3):hover ~ .shape {
+  clip-path: polygon(
+    397px 188px,
+    391px 185px,
+    401px 172px,
+    424px 172px,
+    459px 168px,
+    491px 162px,
+    498px 153px,
+    502px 136px,
+    519px 131px,
+    535px 140px,
+    555px 148px,
+    572px 145px,
+    595px 143px,
+    609px 150px,
+    634px 168px,
+    602px 167px,
+    560px 164px,
+    519px 173px,
+    562px 191px,
+    589px 198px,
+    628px 210px,
+    601px 211px,
+    566px 206px,
+    542px 198px,
+    515px 187px,
+    508px 178px,
+    490px 177px,
+    466px 185px,
+    408px 200px,
+    398px 192px
+  );
+  transform: rotateZ(0deg);
+}
+button:nth-child(4):hover ~ .shape {
+  clip-path: polygon(
+    398px 187px,
+    392px 184px,
+    402px 171px,
+    425px 171px,
+    460px 167px,
+    492px 161px,
+    499px 152px,
+    503px 135px,
+    520px 130px,
+    536px 139px,
+    556px 147px,
+    573px 144px,
+    596px 142px,
+    610px 149px,
+    635px 167px,
+    603px 166px,
+    561px 163px,
+    520px 172px,
+    547px 191px,
+    586px 212px,
+    623px 235px,
+    588px 229px,
+    552px 212px,
+    533px 200px,
+    522px 191px,
+    509px 177px,
+    491px 176px,
+    467px 184px,
+    409px 199px,
+    399px 191px
+  );
+  transform: rotateZ(20deg);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0) rotateX(0);
+  }
+  50% {
+    transform: translateY(-20px) rotateX(3deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(0);
+  }
+}
+div.left-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.left-text.hide {
+  opacity: 0;
+}
+
+div.top-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.top-text.hide {
+  opacity: 0;
+}
+div.bottom-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.bottom-text.hide {
+  opacity: 0;
+}
+div.back-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.back-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.back-text-small {
+  position: absolute;
+  transform: translateY(-150px);
+  transition: 0.8s ease;
+  font-size: 15px;
+  opacity: 1;
+}
+
+div.back-text-small.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.front-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.front-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.big-project-1-text {
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.big-project-1-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.big-project-2-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.big-project-2-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.big-project-3-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.big-project-3-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-1-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-1-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-4-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-4-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-3-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-3-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-2-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-2-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(248, 249, 250);
+}
