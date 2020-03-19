@@ -12,7 +12,7 @@ body {
   height: 200px;
   perspective: 700px;
   margin: 250px auto;
-  transform: translateY(-110px)
+  transform: translateY(-110px);
 }
 
 .box {
@@ -115,7 +115,8 @@ h1.big-projects {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(-90deg) translateY(20px) translateZ(-120px) translateX(-15px) scaleX(-1) scale(1.1);
+  transform: rotateY(-90deg) translateY(20px) translateZ(-120px)
+    translateX(-15px) scaleX(-1) scale(1.1);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -127,7 +128,8 @@ h1.small-projects {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(-90deg) translateY(20px) translateZ(-110px) translateX(-70px) scaleX(-1) scale(1.1);
+  transform: rotateY(-90deg) translateY(20px) translateZ(-110px)
+    translateX(-70px) scaleX(-1) scale(1.1);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -139,8 +141,8 @@ h1.about-me {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
-  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-120px) translateX(25px)
-    translateZ(100px);
+  transform: rotateY(0deg) rotateZ(0deg) rotateX(90deg) translateY(-120px)
+    translateX(25px) translateZ(100px);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(238, 238, 238);
   transition: 0.4s ease;
@@ -162,7 +164,7 @@ h1.my-github {
     0 -1px 5px rgba(230, 230, 230, 0.233);
 }
 
-h1.big-project-1-title{
+h1.big-project-1-title {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
@@ -174,10 +176,10 @@ h1.big-project-1-title{
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
 }
-h1.big-project-1-title.hide{
+h1.big-project-1-title.hide {
   opacity: 0;
 }
-h1.big-project-2-title{
+h1.big-project-2-title {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform-style: preserve-3d;
@@ -189,7 +191,91 @@ h1.big-project-2-title{
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
 }
-h1.big-project-2-title.hide{
+h1.big-project-3-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(140px) translateX(-25px)
+    translateY(-50px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-1-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(0px) translateY(-80px)
+    scale(0.9);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-4-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-40px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-3-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-80px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-2-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  width: 200px;
+  transform: rotateY(90deg) translateZ(110px) translateX(5px) translateY(-80px)
+    scale(1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
+h1.small-project-1-title.hide {
+  opacity: 0;
+}
+h1.small-project-2-title.hide {
+  opacity: 0;
+}
+h1.small-project-4-title.hide {
+  opacity: 0;
+}
+h1.small-project-3-title.hide {
+  opacity: 0;
+}
+h1.big-project-3-title.hide {
+  opacity: 0;
+}
+h1.big-project-2-title.hide {
   opacity: 0;
 }
 h1.projects.hide {
@@ -414,6 +500,10 @@ button#btn-23:hover {
   padding-left: 10px;
 }
 
+button#btn-26:hover {
+  color: rgb(238, 161, 238) !important;
+}
+
 button#btn-24 {
   font-size: 12px;
   transform: translateY(30px);
@@ -499,7 +589,86 @@ button#btn-33:hover {
   transform: translateY(15px) scaleX(1) scale(1.05);
   padding-left: 10px;
 }
-
+button#btn-35 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-35:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-36 {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+}
+button#btn-36:hover {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-37 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-37:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-38 {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+}
+button#btn-38:hover {
+  transform: translateY(23px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-39 {
+  font-size: 11px;
+  transform: translateY(0px);
+}
+button#btn-39:hover {
+  font-size: 11px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-40 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-40:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-41 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-41:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-42 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-42:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-43 {
+  font-size: 13px;
+  transform: translateY(0px);
+}
+button#btn-43:hover {
+  font-size: 13px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-44 {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+}
+button#btn-44:hover {
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
 button.site-repo {
   background: none;
   color: inherit;
@@ -799,8 +968,63 @@ div.big-project-2-text.hide {
   opacity: 0;
   pointer-events: none;
 }
+div.big-project-3-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
 
-a{
+div.big-project-3-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-1-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-1-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-4-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-4-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-3-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-3-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.small-project-2-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.small-project-2-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+a {
   text-decoration: none;
   color: rgb(248, 249, 250);
 }
