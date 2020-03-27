@@ -1,13 +1,13 @@
 {
   "name": "portfoliosite",
   "version": "1.0.0",
-  "main": "script.js",
+  "main": "./build/script.js",
   "scripts": {
     "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://D4YonSoundcloud.github.io/RandomMiniProjects/tree/master/cssmorphtest",
+  "homepage": "https://mattdayweb.dev",
   "dependencies": {
     "gh-pages": "^2.2.0"
   },
