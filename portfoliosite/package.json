@@ -1,7 +1,6 @@
 {
   "name": "portfoliosite",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "deploy": "gh-pages -d build"
@@ -11,5 +10,6 @@
   "homepage": "https://D4YonSoundcloud.github.io/RandomMiniProjects/tree/master/cssmorphtest",
   "dependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "description": ""
 }
