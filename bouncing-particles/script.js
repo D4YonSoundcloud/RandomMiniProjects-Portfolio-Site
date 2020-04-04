@@ -60,7 +60,7 @@ function init() {
     let x = Math.random() * canvas.width;
     let y = Math.random() * canvas.height;
     let size = Math.random() * 5 + 2;
-    let color = "black";
+    let color = "purple";
     let weight = 1;
     particleArray.push(new Particles(x, y, size, color, weight));
   }
@@ -69,7 +69,9 @@ function init() {
 //animate canvas
 
 function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'rgba(0,0,0,0.08)';
+  ctx.fillRect(0,0,canvas.width, canvas.height);
   for (let i = 0; i < particleArray.length; i++) {
     particleArray[i].update();
     particleArray[i].draw();
