@@ -204,6 +204,19 @@ h1.big-project-3-title {
     0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
     0 -1px 5px rgba(230, 230, 230, 0.233);
 }
+h1.big-project-4-title {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform-style: preserve-3d;
+  transform: rotateY(90deg) translateZ(140px) translateX(0px) scale(1)
+    translateY(-100px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(238, 238, 238);
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+}
 h1.small-project-1-title {
   position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -275,6 +288,9 @@ h1.small-project-3-title.hide {
 h1.big-project-3-title.hide {
   opacity: 0;
 }
+h1.big-project-4-title.hide {
+  opacity: 0;
+}
 h1.big-project-2-title.hide {
   opacity: 0;
 }
@@ -325,7 +341,7 @@ p.webdev.hide {
 .side-front {
   box-shadow: -1px 1px 1px 1px rgb(220, 162, 228);
   transform: rotateY(0) translateZ(100px);
-  background-color:rgb(128, 91, 134);
+  background-color: rgb(128, 91, 134);
 }
 
 .side-left {
@@ -426,17 +442,17 @@ button#btn-14:hover {
   padding-left: 25px;
 }
 button#btn-15 {
-  font-size: 20px;
+  font-size: 30px;
 }
 button#btn-15:hover {
   transform: scale(1.1);
   padding-left: 25px;
 }
 button#btn-16 {
-  transform: translateY(40px);
+  transform: translateY(5px);
 }
 button#btn-16:hover {
-  transform: translateY(40px) scaleX(1) scale(1.05);
+  transform: translateY(5px) scaleX(1) scale(1.05);
   padding-left: 10px;
 }
 button#btn-9 {
@@ -464,12 +480,12 @@ button#btn-9 {
 }
 button#btn-11 {
   font-size: 20px;
-  transform: translateY(10px) scaleX(1) scale(1.05);
+  transform: translateY(0px) scaleX(1) scale(1.05);
   padding-left: 40px;
 }
 button#btn-11:hover {
   font-size: 20px;
-  transform: translateY(10px) scaleX(1) scale(1.1);
+  transform: translateY(0px) scaleX(1) scale(1.1);
   padding-left: 60px;
 }
 
@@ -558,6 +574,11 @@ button#btn-32:hover {
   padding-left: 10px;
 }
 
+button#btn-27:hover {
+  transform: scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+
 button#btn-25 {
   transform: translateY(30px);
 }
@@ -599,10 +620,17 @@ button#btn-35:hover {
   padding-left: 10px;
 }
 button#btn-36 {
-  transform: translateY(23px) scaleX(1) scale(1.05);
+  transform: translateY(15px) translateX(50px) scaleX(1) scale(1.05);
 }
 button#btn-36:hover {
-  transform: translateY(23px) scaleX(1) scale(1.05);
+  transform: translateY(15px) translateX(50px) scaleX(1) scale(1.15);
+  padding-left: 15px;
+}
+button#btn-48 {
+  transform: translateY(25px) translateX(50px) scaleX(1) scale(1.05);
+}
+button#btn-48:hover {
+  transform: translateY(25px) translateX(50px) scaleX(1) scale(1.15);
   padding-left: 15px;
 }
 button#btn-37 {
@@ -667,6 +695,24 @@ button#btn-44 {
 }
 button#btn-44:hover {
   transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 15px;
+}
+button#btn-45 {
+  font-size: 20px;
+  transform: translateY(0px) scaleX(1) scale(1.05);
+  padding-left: 40px;
+}
+button#btn-45:hover {
+  font-size: 20px;
+  transform: translateY(0px) scaleX(1) scale(1.1);
+  padding-left: 60px;
+}
+button#btn-47 {
+  font-size: 17px;
+}
+button#btn-47:hover {
+  font-size: 17px;
+  transform: scale(1.1);
   padding-left: 15px;
 }
 button.site-repo {
@@ -928,7 +974,7 @@ div.back-text.hide {
 
 div.back-text-small {
   position: absolute;
-  transform: translateY(-150px);
+  transform: translateY(-190px);
   transition: 0.8s ease;
   font-size: 15px;
   opacity: 1;
@@ -976,6 +1022,17 @@ div.big-project-3-text {
 }
 
 div.big-project-3-text.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+div.big-project-4-text {
+  position: absolute;
+  transform: translateY(-170px);
+  transition: 0.8s ease;
+  opacity: 1;
+}
+
+div.big-project-4-text.hide {
   opacity: 0;
   pointer-events: none;
 }
@@ -1029,3 +1086,17 @@ a {
   color: rgb(248, 249, 250);
 }
 
+p#disclaimer {
+  color: rgb(248, 249, 250);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: 0.4s ease;
+  text-shadow: -1px 0 5px rgba(238, 238, 238, 0.219),
+    0 1px 5px rgba(255, 255, 255, 0.143), 1px 0 5px rgba(255, 255, 255, 0.219),
+    0 -1px 5px rgba(230, 230, 230, 0.233);
+    transition: 0.4s ease;
+  transform: scale(0.95);
+}
+
+p#disclaimer:hover{
+  transform: scale(1)
+}
