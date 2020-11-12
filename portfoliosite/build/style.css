@@ -462,12 +462,33 @@ button#btn-9 {
     0 1px 3px rgba(255, 255, 255, 0.143), 1px 0 3px rgba(255, 255, 255, 0.219),
     0 -1px 3px rgba(230, 230, 230, 0.233);
 }
-button#btn-11 {
+
+button.github-button {
   font-size: 20px;
   transform: translateY(10px) scaleX(1) scale(1.05);
   padding-left: 40px;
 }
-button#btn-11:hover {
+button.github-button:hover {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.1);
+  padding-left: 60px;
+}
+button.github-button:focus {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.1);
+  padding-left: 60px;
+}
+button.project-link {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.05);
+  padding-left: 40px;
+}
+button.project-link:hover {
+  font-size: 20px;
+  transform: translateY(10px) scaleX(1) scale(1.1);
+  padding-left: 60px;
+}
+button.project-link:focus {
   font-size: 20px;
   transform: translateY(10px) scaleX(1) scale(1.1);
   padding-left: 60px;
@@ -562,6 +583,10 @@ button#btn-25 {
   transform: translateY(30px);
 }
 button#btn-25:hover {
+  transform: translateY(30px) scaleX(1) scale(1.05);
+  padding-left: 10px;
+}
+button#btn-25:focus {
   transform: translateY(30px) scaleX(1) scale(1.05);
   padding-left: 10px;
 }
@@ -688,6 +713,10 @@ button.site-repo {
 }
 
 button:hover {
+  transform: scaleX(1.1) scale(1.1);
+  padding-left: 25px;
+}
+button:focus {
   transform: scaleX(1.1) scale(1.1);
   padding-left: 25px;
 }

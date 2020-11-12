@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="style-mobile.css" />
     <script src="script.js" defer></script>
   </head>
+  <style>
+    html{
+      overflow-x: hidden !important;
+      overflow-y: hidden !important;
+    }
+  </style>
   <body>
-    <div class="container">
+    <div class="container" id="app">
       <div class="box" id="box">
         <h1 class="main" id="main">MATT DAY</h1>
         <p class="webdev" id="webdev">WEB DEVELOPMENT</p>
@@ -19,6 +25,7 @@
         <h1 class="about-me hide" id="about-me">ABOUT ME</h1>
         <h1 class="my-github hide" id="my-github">MY GITHUB</h1>
         <h1 class="big-project-1-title hide" id="big-project-1-title">
+
           HTML DIV GENERATOR
         </h1>
         <h1 class="big-project-2-title hide" id="big-project-2-title">
@@ -41,11 +48,11 @@
             PAST PORTFOLIO
           </h1>
         <div class="side side-front">
-          <div class="front-text" id="front-text">
+          <div tabindex="0" class="front-text" id="front-text">
             <button id="btn-2"><p>-------------------</p></button>
-            <button id="btn-1"><p>PROJECTS</p></button>
-            <button id="btn-3"><p>ABOUT</p></button>
-            <button id="btn-4"><p>MY GITHUB</p></button>
+            <button id="btn-1" ref="project-button" v-on:keydown.enter="btn1move()"><p>PROJECTS</p></button>
+            <button id="btn-3" ref="about-button"><p>ABOUT</p></button>
+            <button id="btn-4" ref="github-button"><p>MY GITHUB</p></button>
             <div class="shape" id="shape-1"></div>
           </div>
         </div>
@@ -61,14 +68,12 @@
           <div class="top-text hide" id="top-text">
             <button id="btn-22">
               <p>
-                JUNIOR CURRENTLY STUDYING WEB DEVELOPEMENT AT THE UNIVERSITY OF CENTRAL
-                FLORIDA
+                SOFTWARE DEVELOPER FOCUSED ON DELIVERING CLEAN, ELEGANT FRONT-END SOLUTIONS
               </p>
             </button>
             <button id="btn-23">
               <p>
-                DEV SKILLS - HTML, CSS, JS, PHP, nodeJS, REACT, mySQL, Express,
-                mongoDB
+                DEV SKILLS - Vue
               </p>
             </button>
             <button id="btn-24">
@@ -89,12 +94,12 @@
                 VANILLA HTML,CSS, AND JAVASCRIPT
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/div-shape-generator"
                 ><p>GITHUB REPO</p></a
               >
             </button>
-            <button id="btn-11">
+            <button id="btn-11-1" class="project-link">
               <a href="https://d4yonsoundcloud.github.io/div-shape-generator/"
                 ><p>LIVE PROJECT</p></a
               >
@@ -111,12 +116,12 @@
                 context API w/Hooks.
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11-2" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/GithubFinder"
                 ><p>GITHUB REPO</p></a
               >
             </button>
-            <button id="btn-11">
+            <button id="btn-11-3" class="project-link">
               <a href="https://githubfinderv1-d4yonsoundcloud.netlify.com/"
                 ><p>LIVE PROJECT</p></a
               >
@@ -132,7 +137,7 @@
                 with it.
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11-4" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/RandomMiniProjects/tree/master/cssmorphtest"
                 ><p>GITHUB REPO</p></a
               >
@@ -147,7 +152,7 @@
         problems I'm currently using to pratice and learn Computer Science.
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11-5" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/DataStructures-Algorithims"
                 ><p>GITHUB REPO</p></a
               >
@@ -162,12 +167,12 @@
         learned alot about timeIntervals with this project. The data array is
         filled with programming related terms
               </p>
-            </button>
-            <button id="btn-11">
+            <button id="btn-11-6" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/typing-game"
                 ><p>GITHUB REPO</p></a
               >
-              <button id="btn-11">
+            </button>
+              <button id="btn-11-7" class="project-link">
                 <a href="https://d4yonsoundcloud.github.io/typing-game/"
                   ><p>LIVE PROJECT</p></a
                 >
@@ -182,11 +187,11 @@
         things with it. Built in plain vanilla JS, HTML, and CSS.
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11-8" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/expense-tracker"
                 ><p>GITHUB REPO</p></a
               >
-              <button id="btn-11">
+              <button id="btn-11-9" class="project-link">
                 <a href="https://d4yonsoundcloud.github.io/expense-tracker/"
                   ><p>LIVE PROJECT</p></a
                 >
@@ -200,11 +205,11 @@
                 My past portfolio site, built in vanilla HTML,CSS,and JavaScript. It was first attempt at a single page vanilla Js site.
               </p>
             </button>
-            <button id="btn-11">
+            <button id="btn-11-10" class="github-button">
               <a href="https://github.com/D4YonSoundcloud/vanilla-js-portfolio"
                 ><p>GITHUB REPO</p></a
               >
-              <button id="btn-11">
+              <button id="btn-11-11" class="project-link">
                 <a href="https://d4yonsoundcloud.github.io/vanilla-js-portfolio/"
                   ><p>LIVE PROJECT</p></a
                 >
@@ -242,6 +247,34 @@
         </div>
       </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+      button1.focus();
+
+
+      let app = new Vue({
+        el: '#app',
+        data:{
+
+        },
+        methods:{
+          btn1move(){
+            box.classList.remove("goToFrontFromBottom");
+            box.classList.toggle("goToLeft");
+            shape1.classList.add("hide");
+            h1Main.classList.add("hide");
+            h1Webdev.classList.add("hide");
+            frontText.classList.add("hide");
+            h1Projects.classList.remove("hide");
+            leftText.classList.remove("hide");
+            console.log(document.getElementById('btn-5'))
+            console.log("added");
+          }
+        },
+        mounted(){
+          console.log(document.getElementById('btn-1'))
+        },
+      })
+    </script>
   </body>
 </html>
